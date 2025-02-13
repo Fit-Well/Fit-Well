@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness & Wellness Testimonials</title>
+    <link rel="stylesheet" href="testi.css"/>
+</head>
+<body>
+    <div class="testimonial-container">
+        <h2>What Our Clients Say</h2>
+        
+        <div class="testimonial active" id="testimonial1">
+            <img src="Images-Vid\fitness image.jpg" alt="Before & After">
+            <p><strong>Raj Malhotra, 25</strong></p>
+            <p>"Before joining this program, I constantly felt drained, unmotivated, and lacked self-confidence. With Coach Rahul’s guidance, I’ve transformed my body and mindset. Now, I feel stronger, healthier, and full of energy every day. This journey has truly changed my life‼💪"</p>
+            <p><em>- Lost 7 kgs, gained muscle & confidence!</em></p>
+            <div class="video-testimonial">
+                <video width="300" controls>
+                    <source src="Images-Vid\testimonial-video1.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <p><strong>Coach Rahul:</strong> "Raj’s dedication has been incredible! He’s an inspiration to many."</p>
+        </div>
+        
+        <div class="testimonial" id="testimonial2">
+            <img src="Images-Vid\client2.jpg" alt="Client Photo">
+            <p><strong>Tina Shah, 57</strong></p>
+            <p>"As a competitive athlete, building endurance was crucial for my performance. This program not only enhanced my stamina but also improved my overall strength and agility. I’ve seen a noticeable difference in my competitions, and I highly recommend it to fellow athletes!🔥🏆"</p>
+            <p><em>- Increased endurance by 30% in 3 months!</em></p>
+            <div class="video-testimonial">
+                <video width="200" height="200" controls>
+                    <source src="Images-Vid\testimonial-video2.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <p><strong>Coach Rahul:</strong> "Tina’s hard work paid off! She’s proof that persistence leads to greatness."</p>
+        </div>
+        
+        <div class="testimonial" id="testimonial3">
+            <img src="Images-Vid\client3.jpg" alt="client Photo">
+            <p><strong>Emily Cooper, 25</strong></p>
+            <p>"I love working out! I have belonged to several ordinary gyms over the years and always had to force myself to go as it was “good for me”. The superb personal training I receive in the classes is a new experience for me. It is motivating and challenging. I appreciate that exercises can be tailored specifically for each woman’s abilities. Routines change frequently which keeps classes fresh and interesting. I feel stronger, healthier and proud of myself🏋️‍♀️🎯"</p>
+            <div class="video-testimonial">
+                <video width="200" height="200" controls>
+                    <source src="Images-Vid\testimonial-video3.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <p><strong>Coach Rahul:</strong> "Emily is extremely reliable & punctual – always set up & ready to start training ahead of time, with an exercise routine planned."</p>
+        </div>
+        
+        
+        <div class="buttons">
+            <button onclick="showTestimonial(1)">View Raj's Story</button>
+            <button onclick="showTestimonial(2)">View Tina's Story</button>
+            <button onclick="showTestimonial(3)">View Emily's Story</button>
+        </div>
+    </div>
+
+    <script>
+        function showTestimonial(num) {
+            document.querySelectorAll('.testimonial').forEach(t => t.classList.remove('active'));
+            document.getElementById('testimonial' + num).classList.add('active');
+        }
+    </script>
+</body>
+</html>
