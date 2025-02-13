@@ -8,6 +8,10 @@ img {
   z-index: -1;
 }
 
+a, button {
+  touch-action: manipulation;
+}
+
 .bgimg {
   position: fixed;
   top: 0;
