@@ -15,7 +15,6 @@ body{
   z-index: -1;
 }
 
-
 .bgimg::before {
   content: '';
   position: absolute;
