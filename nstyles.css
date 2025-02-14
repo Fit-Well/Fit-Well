@@ -1,0 +1,160 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #121212;
+    color: white;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+.all {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width:100%;
+}
+
+
+.header {
+    margin-bottom: 100px;
+    font-size: 24px;
+}
+
+
+.nutrition-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 90px;
+    padding: 100px;
+}
+
+
+.nutrition {
+    position: relative;
+    width: 350px;
+    height: 350px;
+    border-radius: 25px;
+    overflow: hidden;
+    transition: 0.3s ease;
+}
+
+
+.nutrition img {
+     width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 25px;
+}
+
+
+.nutrition .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #687862;
+    opacity: 0.8;
+    border-radius: 25px;
+    transition: 0.3s ease;
+}
+
+
+.nutrition h1 {
+    position: absolute;
+    width: 100%;
+    bottom: 50%;
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+}
+
+
+.nutrition:hover .overlay {
+    opacity: 0.3;
+}
+
+.nutrition:hover {
+    transform: scale(1.1);
+    border: 2px solid #9acd32;
+    box-shadow: 0 0 25px #9acd32;
+}
+
+.nutrition:hover h1 {
+    color: black;
+    background: #9acd32;
+}
+
+.section {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #1e1e1e;
+    padding: 20px;
+    border-radius: 25px;
+    width: 90%;
+    max-width: 1200px;
+    margin: 30px 0 ;
+}
+
+.text-content {
+    color: white;
+    max-width: 50%;
+    text-align: left;
+}
+
+.badge {
+    display: inline-block;
+    background-color: #2b2b2b;
+    padding: 8px 15px;
+    border-radius: 25px;
+    border: 2px solid #9acd32;
+    font-size: 14px;
+    color: #9acd32;
+    font-weight: bold;
+    transition: 0.2s ease;
+}
+
+.text-content h1 {
+    font-size: 30px;
+    font-weight: bold;
+    margin: 20px 0;
+}
+
+.image-content img {
+    width: 350px;
+    height: auto;
+    border-radius: 15px;
+    transition: 0.2s ease-in-out;
+}
+
+.badge:hover{
+    transform: scale(1.1);
+    background-color: #9acd32;
+    color: #121212;
+    box-shadow: 0 0 25px #9acd32;
+}
+
+
+.image-content:hover img{
+    border: 2px solid #9acd32;
+    box-shadow: 0 0 25px #9acd32;
+}
