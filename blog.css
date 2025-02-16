@@ -1,0 +1,5 @@
+.h{text-align:center;background-color:black;color:white;padding:30px}
+body{background-color: #121212;
+     font-family: Arial, sans-serif;}
+.left{background-color:gray;color:black;width:50%;float:left;outline-style:solid;position:relative;bottom:800px}
+.right{background-color:gray;color:black;width:50%;float:right;outline-style:solid;position:relative;bottom:800px}
