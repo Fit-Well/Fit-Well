@@ -4,29 +4,31 @@ body {
     font-family: Arial, sans-serif;
     text-align: center;
     min-height: 100vh;
-    display: flex;
-    flex-direction: row;
+    display:grid;
+    grid-template-columns: repeat(4, 1fr);
     justify-content: space-around;
-    align-items: center;
+    align-content: center; 
 }
 
 .gallery {
-position: relative;
-width: 350px;
-height: 350px;
-border-radius: 25px;
-overflow: hidden;
-transition: 0.3s ease;
+    position: relative;
+    width: 350px;
+    height: 350px;
+    border-radius: 25px;
+    margin: 30px;
+    overflow: hidden;
+    transition: 0.3s ease;
 }
+
 .gallery:hover {
-transform: scale(1.1);
-border: 2px solid #9acd32;
-box-shadow: 0 0 25px #9acd32;
+    transform: scale(1.1);
+    border: 2px solid #9acd32;
+    box-shadow: 0 0 25px #9acd32;
 }
 
 .gallery img {
-width: 100%;
-height: 100%;
-object-fit: cover;
-border-radius: 25px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 25px;
 }
